@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694722639218,
+  "lastUpdate": 1694725029904,
   "repoUrl": "https://github.com/SecuringCarter/opentelemetry-java",
   "entries": {
     "Benchmark": [
@@ -721,6 +721,58 @@ window.BENCHMARK_DATA = {
           {
             "name": "io.opentelemetry.sdk.trace.SpanBenchmark.simpleSpanStartAddEventEnd_10Threads",
             "value": 13978.520596831386,
+            "unit": "ops/ms",
+            "extra": "iterations: 10\nforks: 1\nthreads: 10"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tyler Benson",
+            "username": "tylerbenson",
+            "email": "tylerbenson@gmail.com"
+          },
+          "committer": {
+            "name": "Tyler Benson",
+            "username": "tylerbenson",
+            "email": "tylerbenson@gmail.com"
+          },
+          "id": "95351ce23034f7db925a06662e6ecda8d377d47d",
+          "message": "Benchmark Tags",
+          "timestamp": "2023-09-14T17:23:17Z",
+          "url": "https://github.com/SecuringCarter/opentelemetry-java/commit/95351ce23034f7db925a06662e6ecda8d377d47d"
+        },
+        "date": 1694725028682,
+        "tool": "jmh",
+        "benches": [
+          {
+            "name": "io.opentelemetry.sdk.trace.FillSpanBenchmark.setFourAttributes",
+            "value": 7142.27325634115,
+            "unit": "ops/ms",
+            "extra": "iterations: 20\nforks: 3\nthreads: 1"
+          },
+          {
+            "name": "io.opentelemetry.sdk.trace.SpanBenchmark.simpleSpanStartAddEventEnd_01Thread",
+            "value": 8175.876619949109,
+            "unit": "ops/ms",
+            "extra": "iterations: 10\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "io.opentelemetry.sdk.trace.SpanBenchmark.simpleSpanStartAddEventEnd_02Threads",
+            "value": 12920.557499382016,
+            "unit": "ops/ms",
+            "extra": "iterations: 10\nforks: 1\nthreads: 2"
+          },
+          {
+            "name": "io.opentelemetry.sdk.trace.SpanBenchmark.simpleSpanStartAddEventEnd_05Threads",
+            "value": 16801.53886691001,
+            "unit": "ops/ms",
+            "extra": "iterations: 10\nforks: 1\nthreads: 5"
+          },
+          {
+            "name": "io.opentelemetry.sdk.trace.SpanBenchmark.simpleSpanStartAddEventEnd_10Threads",
+            "value": 15486.955180057324,
             "unit": "ops/ms",
             "extra": "iterations: 10\nforks: 1\nthreads: 10"
           }
