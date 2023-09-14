@@ -227,6 +227,15 @@
 
       const data = window.BENCHMARK_DATA;
 
+      data.entries.Benchmark.sort(function(a, b) {
+        const keyA = new Date(a.commit.timestamp);
+        const keyB = new Date(b.commit.timestamp);
+        if (keyA < keyB) return -1;
+        if (keyA > keyB) return 1;
+        // if same commit time sort by execution time.
+        return a.date - b.date;
+      });
+
       // Render header
       document.getElementById('last-update').textContent = new Date(data.lastUpdate).toString();
       const repoLink = document.getElementById('repository-link');
